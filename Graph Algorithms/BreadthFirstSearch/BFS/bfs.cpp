@@ -33,7 +33,6 @@ void Graph::BFS(int source) {
 		source = queue.front();
 		cout << source << " ";
 		queue.pop_front();
-		
 		for (i = adj[source].begin(); i != adj[source].end(); i++) {
 			if (!visited[*i]) {
 			visited[*i] = true;
