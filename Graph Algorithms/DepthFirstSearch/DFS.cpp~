@@ -29,7 +29,7 @@ void Graph::DFS(int vertex) {
 	visited[vertex] = true;
 	cout << vertex <<" ";
 	list<int>::iterator i;
-	for (i = adj.begin(); i != adj.end(); i++) {
+	for (i = adj[vertex].begin(); i != adj[vertex].end(); i++) {
 		if (!visited[*i]) 
 			DFS(*i);
 	}
